@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+}
+
+nav {
+    width: 300px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    margin-left: 350px;  /* Space for the nav */
+    margin-right: 0;
+}
+
+/* Remove or comment out any duplicate main margin definitions */
+/* main {
+    margin-right: 300px;
+} */
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+}
+
+.profile-name {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.profile-title {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #e0e0e0;
+    transform: translateX(-5px);
+}
+
+.technologies-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.technologies-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    
+    main {
+        margin-right: 0;
+    }
+}
+
+#about-me {
+    margin: 20px;
+}
+
+#experience {
+    margin: 20px;
+}
+
+#technologies {
+    margin: 20px;
+}
+
+#contact {
+    margin: 20px;
+}
+
+
